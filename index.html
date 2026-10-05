@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>مفاجأة البيبي 💙🩷</title>
+
+
+<style>
+
+/* ==================================================
+   الإعدادات العامة
+================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 10%,
+            #5ecbff 0%,
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            #ff91be 0%,
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #66d2ff,
+            #c9c9ff,
+            #ffafd2
+        );
+
+    color: #51435f;
+}
+
+
+/* ==================================================
+   الشاشات
+================================================== */
+
+.screen {
+
+    width: min(94%, 520px);
+
+    text-align: center;
+
+    animation:
+        appear .7s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* ==================================================
+   الإيموجي
+================================================== */
+
+.emoji {
+
+    font-size: 68px;
+
+    margin-bottom: 12px;
+
+    animation:
+        floating 2.5s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes floating {
+
+    0%, 100% {
+
+        transform:
+            translateY(0);
+    }
+
+    50% {
+
+        transform:
+            translateY(-10px);
+    }
+}
+
+
+/* ==================================================
+   العناوين
+================================================== */
+
+h1 {
+
+    color: white;
+
+    font-size:
+        clamp(34px, 9vw, 52px);
+
+    text-shadow:
+        0 4px 12px
+        rgba(0,0,0,.20);
+}
+
+
+.subtitle {
+
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin-top: 12px;
+}
+
+
+.question {
+
+    color: white;
+
+    font-size:
+        clamp(28px, 7vw, 42px);
+
+    margin-bottom: 8px;
+}
+
+
+.question-sub {
+
+    color: white;
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==================================================
+   الأزرار
+================================================== */
+
+.start-btn {
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 15px 32px;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #e75a98,
+            #657ee4
+        );
+
+    box-shadow:
+
+        0 10px 25px
+        rgba(60,50,100,.25);
+
+    transition: .2s;
+}
+
+
+.start-btn:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+}
+
+
+/* ==================================================
+   صندوق التصويت
+================================================== */
+
+.vote-box {
+
+    padding: 22px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,.30);
+
+    backdrop-filter:
+        blur(15px);
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(60,50,100,.22);
+}
+
+
+.vote-buttons {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 14px;
+}
+
+
+.vote-btn {
+
+    border: none;
+
+    border-radius: 22px;
+
+    padding: 20px 10px;
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+    box-shadow:
+
+        0 8px 20px
+        rgba(60,50,100,.18);
+}
+
+
+.vote-btn:hover {
+
+    transform:
+        scale(1.04);
+}
+
+
+/* ولد */
+
+.boy {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #168fdf,
+            #69d5ff
+        );
+}
+
+
+/* بنت */
+
+.girl {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #e94f91,
+            #ff9bc7
+        );
+}
+
+
+.vote-number {
+
+    display: block;
+
+    font-size: 30px;
+
+    margin-top: 5px;
+}
+
+
+/* ==================================================
+   الإحصائيات
+================================================== */
+
+.total {
+
+    color: white;
+
+    margin-top: 20px;
+
+    font-size: 17px;
+}
+
+
+.result-row {
+
+    margin-top: 15px;
+}
+
+
+.result-label {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    color: white;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+.bar {
+
+    height: 18px;
+
+    background:
+        rgba(255,255,255,.5);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.fill {
+
+    height: 100%;
+
+    width: 0;
+
+    border-radius: 20px;
+
+    transition:
+        width .5s ease;
+}
+
+
+.blue-fill {
+
+    background: #168fdf;
+}
+
+
+.pink-fill {
+
+    background: #e94f91;
+}
+
+
+.vote-message {
+
+    color: white;
+
+    font-weight: bold;
+
+    margin-top: 18px;
+
+    min-height: 25px;
+}
+
+
+/* ==================================================
+   لوحة XO
+================================================== */
+
+.game-title {
+
+    color: white;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.game-subtitle {
+
+    color: white;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+.board {
+
+    width:
+        min(90vw, 360px);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    padding: 12px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,.30);
+
+    backdrop-filter:
+        blur(12px);
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(60,50,100,.25);
+}
+
+
+/* ==================================================
+   مربعات اللعبة
+================================================== */
+
+.cell {
+
+    aspect-ratio: 1;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e9f7ff
+        );
+
+    cursor: pointer;
+
+    font-size: 43px;
+
+    font-weight: bold;
+
+    color: #718096;
+
+    box-shadow:
+
+        0 7px 15px
+        rgba(60,50,100,.15);
+
+    transition:
+        transform .25s,
+        background .25s;
+}
+
+
+.cell:hover {
+
+    transform:
+        scale(1.05);
+}
+
+
+.cell.opened {
+
+    cursor: default;
+
+    animation:
+        reveal .45s ease;
+}
+
+
+@keyframes reveal {
+
+    0% {
+
+        transform:
+            rotateY(90deg)
+            scale(.8);
+
+        opacity: .2;
+    }
+
+    100% {
+
+        transform:
+            rotateY(0)
+            scale(1);
+
+        opacity: 1;
+    }
+}
+
+
+/* ==================================================
+   X = ولد
+================================================== */
+
+.cell.x {
+
+    color: #168fdf;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #eefaff,
+            #c9efff
+        );
+}
+
+
+/* ==================================================
+   O = بنت
+================================================== */
+
+.cell.o {
+
+    color: #e94f91;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #fff2f8,
+            #ffd5e7
+        );
+}
+
+
+/* ==================================================
+   المربع الأوسط
+================================================== */
+
+.cell.middle {
+
+    border:
+        3px solid
+        rgba(233,79,145,.35);
+}
+
+
+/* ==================================================
+   حركة التوتر
+================================================== */
+
+@keyframes nervous {
+
+    0%, 100% {
+
+        transform:
+            scale(1);
+    }
+
+    25% {
+
+        transform:
+            scale(1.05)
+            rotate(-2deg);
+    }
+
+    75% {
+
+        transform:
+            scale(1.05)
+            rotate(2deg);
+    }
+}
+
+
+.cell.last {
+
+    animation:
+        nervous .6s
+        infinite;
+}
+
+
+/* ==================================================
+   خط الفوز
+================================================== */
+
+.cell.winner {
+
+    color: #e94f91;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #ffb5d5,
+            #ffe7f1
+        );
+
+    box-shadow:
+
+        0 0 30px
+        rgba(233,79,145,.75);
+
+    animation:
+        winnerPulse .6s
+        infinite alternate;
+}
+
+
+@keyframes winnerPulse {
+
+    from {
+
+        transform:
+            scale(1);
+    }
+
+    to {
+
+        transform:
+            scale(1.08);
+    }
+}
+
+
+/* ==================================================
+   عداد المربعات
+================================================== */
+
+.open-count {
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    margin-top: 18px;
+
+    min-height: 55px;
+}
+
+
+/* ==================================================
+   شاشة النتيجة النهائية
+================================================== */
+
+.final {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #ffffff 0%,
+            #ffd5e7 45%,
+            #8ed8ff 100%
+        );
+}
+
+
+.final.show {
+
+    display: flex;
+
+    animation:
+        appear .8s ease;
+}
+
+
+.final-box {
+
+    animation:
+        pop 1s
+        cubic-bezier(
+            .17,.67,.35,1.4
+        );
+}
+
+
+@keyframes pop {
+
+    from {
+
+        transform:
+            scale(.2);
+
+        opacity: 0;
+    }
+
+    to {
+
+        transform:
+            scale(1);
+
+        opacity: 1;
+    }
+}
+
+
+.final-baby {
+
+    font-size: 110px;
+
+    animation:
+        baby .9s
+        infinite
+        ease-in-out;
+}
+
+
+@keyframes baby {
+
+    0%,100% {
+
+        transform:
+            rotate(-5deg)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            rotate(5deg)
+            scale(1.08);
+    }
+}
+
+
+.final h2 {
+
+    color: #e94f91;
+
+    font-size:
+        clamp(43px, 11vw, 72px);
+
+    margin: 10px 0;
+}
+
+
+.final p {
+
+    color: #5d4b68;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+}
+
+
+.restart {
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 13px 30px;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #e85a98,
+            #697de2
+        );
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   الهاتف
+================================================== */
+
+@media(max-width:430px) {
+
+    .cell {
+
+        font-size: 38px;
+
+        border-radius: 15px;
+    }
+
+    .vote-buttons {
+
+        gap: 9px;
+    }
+
+    .vote-btn {
+
+        font-size: 18px;
+
+        padding: 17px 7px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     الشاشة الأولى
+================================================== -->
+
+<section
+    class="screen"
+    id="start"
+>
+
+    <div class="emoji">
+        👶🏻🎁
+    </div>
+
+
+    <h1>
+        مفاجأة صغيرة
+    </h1>
+
+
+    <p class="subtitle">
+
+        لدينا خبر جميل جدًا 💕<br>
+
+        هل أنتم مستعدون لمعرفة المفاجأة؟
+
+    </p>
+
+
+    <button
+        class="start-btn"
+        onclick="openVoting()"
+    >
+
+        مستعدون؟ 😍
+
+    </button>
+
+</section>
+
+
+
+<!-- ==================================================
+     شاشة التصويت
+================================================== -->
+
+<section
+    class="screen hidden"
+    id="voting"
+>
+
+    <div class="emoji">
+        💭
+    </div>
+
+
+    <h2 class="question">
+        ماذا تتوقعون؟
+    </h2>
+
+
+    <p class="question-sub">
+
+        هل المولود ولد أم بنت؟ 👶🏻
+
+    </p>
+
+
+    <div class="vote-box">
+
+
+        <div class="vote-buttons">
+
+
+            <!-- ولد -->
+
+            <button
+                class="vote-btn boy"
+                onclick="vote('boy')"
+            >
+
+                💙 ولد
+
+                <span
+                    class="vote-number"
+                    id="boyVotes"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- بنت -->
+
+            <button
+                class="vote-btn girl"
+                onclick="vote('girl')"
+            >
+
+                🩷 بنت
+
+                <span
+                    class="vote-number"
+                    id="girlVotes"
+                >
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div class="total">
+
+            عدد التوقعات:
+
+            <strong id="totalVotes">
+                0
+            </strong>
+
+        </div>
+
+
+        <!-- نسبة الولد -->
+
+        <div class="result-row">
+
+            <div class="result-label">
+
+                <span>
+                    💙 ولد
+                </span>
+
+                <span id="boyPercent">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="bar">
+
+                <div
+                    class="fill blue-fill"
+                    id="boyBar"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- نسبة البنت -->
+
+        <div class="result-row">
+
+            <div class="result-label">
+
+                <span>
+                    🩷 بنت
+                </span>
+
+                <span id="girlPercent">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="bar">
+
+                <div
+                    class="fill pink-fill"
+                    id="girlBar"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="vote-message"
+            id="voteMessage"
+        >
+
+            اضغطوا على توقعكم 💕
+
+        </div>
+
+
+        <button
+            class="start-btn"
+            id="gameButton"
+            onclick="startGame()"
+            disabled
+        >
+
+            ابدأوا الكشف 🎮
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     لعبة XO
+================================================== -->
+
+<section
+    class="screen hidden"
+    id="game"
+>
+
+    <div class="emoji">
+        👀🎁
+    </div>
+
+
+    <h2 class="game-title">
+
+        حان وقت الكشف! ✨
+
+    </h2>
+
+
+    <p class="game-subtitle">
+
+        افتحوا المربعات واحدًا تلو الآخر<br>
+
+        لكن المربع الأوسط... للنهاية 👈👉🫣
+
+    </p>
+
+
+    <div class="board">
+
+
+        <!-- الصف الأول -->
+
+        <button
+            class="cell"
+            onclick="openCell(0)"
+        >
+            ?
+        </button>
+
+
+        <button
+            class="cell"
+            onclick="openCell(1)"
+        >
+            ?
+        </button>
+
+
+        <button
+            class="cell"
+            onclick="openCell(2)"
+        >
+            ?
+        </button>
+
+
+        <!-- الصف الثاني -->
+
+        <button
+            class="cell"
+            onclick="openCell(3)"
+        >
+            ?
+        </button>
+
+
+        <!-- المربع الأوسط -->
+
+        <button
+            class="cell middle"
+            onclick="openCell(4)"
+        >
+            ?
+        </button>
+
+
+        <button
+            class="cell"
+            onclick="openCell(5)"
+        >
+            ?
+        </button>
+
+
+        <!-- الصف الثالث -->
+
+        <button
+            class="cell"
+            onclick="openCell(6)"
+        >
+            ?
+        </button>
+
+
+        <button
+            class="cell"
+            onclick="openCell(7)"
+        >
+            ?
+        </button>
+
+
+        <button
+            class="cell"
+            onclick="openCell(8)"
+        >
+            ?
+        </button>
+
+
+    </div>
+
+
+    <div
+        class="open-count"
+        id="openCount"
+    >
+
+        تم فتح 0 من 9 🎁
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     النتيجة النهائية
+================================================== -->
+
+<section
+    class="final"
+    id="final"
+>
+
+    <div class="final-box">
+
+
+        <div class="final-baby">
+            👶🏻🎀
+        </div>
+
+
+        <h2>
+            O فازت! 🩷
+        </h2>
+
+
+        <p>
+
+           🎉🎉🥳 والآن عرفنا السر...
+
+        </p>
+
+
+        <h2>
+            إنها بنت! 🩷
+        </h2>
+
+
+        <p>
+
+            ألف مبروك 💕<br>
+
+            الأميرة الصغيرة في الطريق 👑
+
+        </p>
+
+
+        <button
+            class="restart"
+            onclick="location.reload()"
+        >
+
+            إعادة المفاجأة 🎀
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+
+/* ==================================================
+   التصويت
+================================================== */
+
+
+/*
+   يبدأ العداد من صفر
+*/
+
+let votes = {
+
+    boy: 0,
+
+    girl: 0
+
+};
+
+
+/* فتح شاشة التصويت */
+
+function openVoting() {
+
+    document
+        .getElementById("start")
+        .classList
+        .add("hidden");
+
+
+    document
+        .getElementById("voting")
+        .classList
+        .remove("hidden");
+
+
+    updateVotes();
+
+}
+
+
+/* تسجيل التصويت */
+
+function vote(type) {
+
+    votes[type]++;
+
+
+    updateVotes();
+
+
+    if(type === "boy") {
+
+        document
+            .getElementById("voteMessage")
+            .textContent =
+            "تم تسجيل توقعكم: 💙 ولد";
+
+    }
+
+
+    if(type === "girl") {
+
+        document
+            .getElementById("voteMessage")
+            .textContent =
+            "تم تسجيل توقعكم: 🩷 بنت";
+
+    }
+
+
+    /*
+       تفعيل زر اللعبة
+    */
+
+    const button =
+        document.getElementById(
+            "gameButton"
+        );
+
+
+    button.disabled = false;
+
+    button.style.opacity = "1";
+
+    button.style.cursor =
+        "pointer";
+
+}
+
+
+/* تحديث التصويت */
+
+function updateVotes() {
+
+    const total =
+        votes.boy +
+        votes.girl;
+
+
+    document
+        .getElementById("boyVotes")
+        .textContent =
+        votes.boy;
+
+
+    document
+        .getElementById("girlVotes")
+        .textContent =
+        votes.girl;
+
+
+    document
+        .getElementById("totalVotes")
+        .textContent =
+        total;
+
+
+    if(total === 0) {
+
+        setText(
+            "boyPercent",
+            "0%"
+        );
+
+        setText(
+            "girlPercent",
+            "0%"
+        );
+
+        setWidth(
+            "boyBar",
+            0
+        );
+
+        setWidth(
+            "girlBar",
+            0
+        );
+
+        return;
+    }
+
+
+    const boyPercent =
+        Math.round(
+            votes.boy /
+            total *
+            100
+        );
+
+
+    const girlPercent =
+        100 - boyPercent;
+
+
+    setText(
+        "boyPercent",
+        boyPercent + "%"
+    );
+
+
+    setText(
+        "girlPercent",
+        girlPercent + "%"
+    );
+
+
+    setWidth(
+        "boyBar",
+        boyPercent
+    );
+
+
+    setWidth(
+        "girlBar",
+        girlPercent
+    );
+
+}
+
+
+function setText(id, value) {
+
+    document
+        .getElementById(id)
+        .textContent =
+        value;
+
+}
+
+
+function setWidth(id, value) {
+
+    document
+        .getElementById(id)
+        .style.width =
+        value + "%";
+
+}
+
+
+/* ==================================================
+   بدء اللعبة
+================================================== */
+
+function startGame() {
+
+    document
+        .getElementById("voting")
+        .classList
+        .add("hidden");
+
+
+    document
+        .getElementById("game")
+        .classList
+        .remove("hidden");
+
+}
+
+
+/* ==================================================
+   ترتيب XO
+================================================== */
+
+
+/*
+       X   O   X
+       O   O   X
+       X   O   O
+
+       💙       🩷       💙
+       🩷       🩷       💙
+       💙       🩷       🩷
+
+
+   العمود الأوسط:
+
+       O
+       O
+       O
+
+   وهو خط الفوز للبنت 🩷.
+*/
+
+
+const hiddenBoard = [
+
+    "X",
+    "O",
+    "X",
+
+    "O",
+    "O",
+    "X",
+
+    "X",
+    "O",
+    "O"
+
+];
+
+
+let openedCells = 0;
+
+let gameFinished = false;
+
+
+const cells =
+    document.querySelectorAll(
+        ".cell"
+    );
+
+
+/* ==================================================
+   فتح مربع
+================================================== */
+
+function openCell(index) {
+
+    if(gameFinished) {
+
+        return;
+
+    }
+
+
+    const cell =
+        cells[index];
+
+
+    /*
+       منع إعادة فتح المربع
+    */
+
+    if(
+        cell.classList.contains(
+            "opened"
+        )
+    ) {
+
+        return;
+
+    }
+
+
+    /*
+       ممنوع فتح الوسط
+       قبل آخر مربع
+    */
+
+    if(
+        index === 4 &&
+        openedCells < 8
+    ) {
+
+        const counter =
+            document.getElementById(
+                "openCount"
+            );
+
+
+        counter.innerHTML =
+            "👈👉🫣<br>" +
+            "هذا المربع للنهاية!";
+
+
+        cell.classList.add(
+            "last"
+        );
+
+
+        setTimeout(
+            function() {
+
+                cell.classList.remove(
+                    "last"
+                );
+
+            },
+            1500
+        );
+
+
+        return;
+
+    }
+
+
+    /*
+       فتح المربع
+    */
+
+    revealCell(index);
+
+}
+
+
+/* ==================================================
+   إظهار محتوى المربع
+================================================== */
+
+function revealCell(index) {
+
+    const cell =
+        cells[index];
+
+
+    const symbol =
+        hiddenBoard[index];
+
+
+    cell.textContent =
+        symbol;
+
+
+    cell.classList.add(
+        "opened"
+    );
+
+
+    /*
+       X = أزرق
+    */
+
+    if(symbol === "X") {
+
+        cell.classList.add(
+            "x"
+        );
+
+    }
+
+
+    /*
+       O = وردي
+    */
+
+    if(symbol === "O") {
+
+        cell.classList.add(
+            "o"
+        );
+
+    }
+
+
+    openedCells++;
+
+
+    updateCounter();
+
+
+    /*
+       عند فتح 8 مربعات
+       نجهز لحظة التوتر.
+    */
+
+    if(
+        openedCells === 8
+    ) {
+
+        prepareFinalMoment();
+
+    }
+
+}
+
+
+/* ==================================================
+   عداد المربعات
+================================================== */
+
+function updateCounter() {
+
+    document
+        .getElementById("openCount")
+        .innerHTML =
+
+        "تم فتح "
+        +
+        openedCells
+        +
+        " من 9 🎁";
+
+}
+
+
+/* ==================================================
+   اللحظة الأخيرة
+================================================== */
+
+function prepareFinalMoment() {
+
+    const counter =
+        document.getElementById(
+            "openCount"
+        );
+
+
+    counter.innerHTML =
+
+        "😳 بقي مربع واحد فقط...<br>" +
+
+        "من سيفوز؟ 💙 أم 🩷؟";
+
+
+    /*
+       جعل المربع الأوسط
+       ينبض.
+    */
+
+    cells[4].classList.add(
+        "last"
+    );
+
+
+    setTimeout(
+        function() {
+
+            counter.innerHTML =
+
+                "👈👉🫣<br>" +
+
+                "المربع الأخير ينتظر...";
+
+        },
+        1800
+    );
+
+}
+
+
+/* ==================================================
+   عند فتح المربع الأوسط
+================================================== */
+
+function openMiddle() {
+
+    revealCell(4);
+
+}
+
+
+/* ==================================================
+   تعديل revealCell
+   للتعامل مع المربع الأوسط
+================================================== */
+
+const originalRevealCell =
+    revealCell;
+
+
+/*
+   إعادة تعريف الفتح
+   بحيث إذا كان الوسط هو الأخير
+   تظهر لحظة الفوز.
+*/
+
+function revealCell(index) {
+
+    const cell =
+        cells[index];
+
+
+    const symbol =
+        hiddenBoard[index];
+
+
+    cell.textContent =
+        symbol;
+
+
+    cell.classList.add(
+        "opened"
+    );
+
+
+    cell.classList.remove(
+        "last"
+    );
+
+
+    if(symbol === "X") {
+
+        cell.classList.add(
+            "x"
+        );
+
+    }
+
+
+    if(symbol === "O") {
+
+        cell.classList.add(
+            "o"
+        );
+
+    }
+
+
+    openedCells++;
+
+
+    /*
+       إذا كان هذا هو الوسط
+       فهذا يعني أن O اكتملت.
+    */
+
+    if(index === 4) {
+
+        updateCounter();
+
+
+        setTimeout(
+            girlWins,
+            600
+        );
+
+
+        return;
+
+    }
+
+
+    updateCounter();
+
+
+    if(openedCells === 8) {
+
+        prepareFinalMoment();
+
+    }
+
+}
+
+
+/* ==================================================
+   فوز البنت
+================================================== */
+
+function girlWins() {
+
+    gameFinished = true;
+
+
+    /*
+       العمود الأوسط:
+
+          O
+          O
+          O
+
+       الخانات:
+       1 - 4 - 7
+    */
+
+    const winningCells = [
+
+        1,
+        4,
+        7
+
+    ];
+
+
+    /*
+       إضاءة خط الفوز
+    */
+
+    winningCells.forEach(
+        function(index) {
+
+            cells[index]
+                .classList
+                .add("winner");
+
+        }
+    );
+
+
+    /*
+       رسالة الفوز
+    */
+
+    const counter =
+        document.getElementById(
+            "openCount"
+        );
+
+
+    counter.innerHTML =
+
+        "🎀 O فازت! 🩷<br>" +
+
+        "ثلاثة متتالية!";
+
+
+    /*
+       بعد لحظة تظهر المفاجأة
+    */
+
+    setTimeout(
+        function() {
+
+            document
+                .getElementById("final")
+                .classList
+                .add("show");
+
+        },
+        2500
+    );
+
+}
+
+</script>
+
+</body>
+
+</html>
+
+
